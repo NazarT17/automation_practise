@@ -14,7 +14,7 @@ test("Search FPV drone and add first product to cart", async ({ page }) => {
 
   await results.waitForResults();
 
-  await results.addFirstProductToCart();
+  await results.selectFirstProduct();
 
   await product.waitForPage();
 

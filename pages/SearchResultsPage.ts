@@ -20,7 +20,7 @@ export class SearchResultsPage {
     );
   }
 
-  async addFirstProductToCart() {
+  async selectFirstProduct() {
     await this.waitForResults();
 
     // Знаходимо кнопку "До кошика" у першому товарі
