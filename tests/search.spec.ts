@@ -17,4 +17,10 @@ test("Search FPV drone and add first product to cart", async ({ page }) => {
   await results.addFirstProductToCart();
 
   await product.waitForPage();
+
+  await product.addToCart();
+
+  await product.openCart();
+
+  await product.clearCart();
 });
