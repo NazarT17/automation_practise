@@ -8,7 +8,8 @@ export class HomePage {
   constructor(page: Page) {
     this.page = page;
     this.searchInput = page.locator("#input_search");
-    this.searchButton = page.locator('button[aria-label="Search"]');
+    // this.searchButton = page.locator('button[aria-label="Search"]');
+    this.searchButton = page.getByRole("button", { name: "Search" });
   }
 
   async goto() {
