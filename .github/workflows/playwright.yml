@@ -42,4 +42,3 @@ jobs:
           publish_dir: ./playwright-report
           publish_branch: gh-pages
           force_orphan: true
-≠
