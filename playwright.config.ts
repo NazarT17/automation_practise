@@ -57,7 +57,10 @@ export default defineConfig({
       name: "api",
       testMatch: "**/api/**/*.spec.ts",
       use: {
-        baseURL: "https://reqres.in",
+        baseURL: "https://petstore.swagger.io/v2/",
+        extraHTTPHeaders: {
+          api_key: "special-key", // Petstore API key for testing
+        },
       },
     },
 
