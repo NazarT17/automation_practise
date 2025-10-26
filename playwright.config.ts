@@ -37,16 +37,28 @@ export default defineConfig({
     {
       name: "chromium",
       use: { ...devices["Desktop Chrome"] },
+      testIgnore: "**/api/**", // Ignore API tests for browser projects
     },
 
     {
       name: "firefox",
       use: { ...devices["Desktop Firefox"] },
+      testIgnore: "**/api/**", // Ignore API tests for browser projects
     },
 
     {
       name: "webkit",
       use: { ...devices["Desktop Safari"] },
+      testIgnore: "**/api/**", // Ignore API tests for browser projects
+    },
+
+    // API testing project - only runs API tests
+    {
+      name: "api",
+      testMatch: "**/api/**/*.spec.ts",
+      use: {
+        baseURL: "https://reqres.in",
+      },
     },
 
     /* Test against mobile viewports. */
