@@ -1,0 +1,778 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e5]: Меню
+  - navigation [ref=e8]:
+    - generic [ref=e9]:
+      - list [ref=e10]:
+        - listitem [ref=e11]:
+          - link "Про компанію" [ref=e12] [cursor=pointer]:
+            - /url: /pro-kompaniiu
+        - listitem [ref=e13]:
+          - link "Оплата і доставка" [ref=e14] [cursor=pointer]:
+            - /url: /oplata-i-dostavka-5
+        - listitem [ref=e15]:
+          - link "Сервісний центр" [ref=e16] [cursor=pointer]:
+            - /url: /servisnyy-centr-3
+        - listitem [ref=e17]:
+          - link "Офіційний дилер" [ref=e18] [cursor=pointer]:
+            - /url: /oficialynyy-diler-10
+      - generic [ref=e19]:
+        - button "Українська Мова " [ref=e23] [cursor=pointer]:
+          - img "Українська" [ref=e24]
+          - text: Мова
+          - generic [ref=e25]: 
+        - button "Обліковий запис" [ref=e27] [cursor=pointer]
+  - banner [ref=e28]:
+    - generic [ref=e30]:
+      - link "RC Store - Магазин FPV дронів та радіокерованої техніки" [ref=e33] [cursor=pointer]:
+        - /url: https://rc-store.com.ua/
+        - img "RC Store - Магазин FPV дронів та радіокерованої техніки" [ref=e34]
+      - generic [ref=e37] [cursor=pointer]:
+        - generic [ref=e38]: 
+        - generic [ref=e39]: Київ, Васильківська 4а.
+        - generic [ref=e40]: 
+      - generic [ref=e43] [cursor=pointer]:
+        - generic [ref=e44]: 
+        - generic [ref=e45]: Графік роботи
+        - generic [ref=e46]: 
+      - generic [ref=e48]:
+        - generic [ref=e50]: 
+        - generic [ref=e51]:
+          - generic [ref=e52] [cursor=pointer]:
+            - text: +380 (99) 060 05 37
+            - generic [ref=e53]: 
+          - generic [ref=e54] [cursor=pointer]: Замовити дзвінок
+  - generic [ref=e57]:
+    - generic [ref=e64] [cursor=pointer]: Список категорій
+    - generic [ref=e65]:
+      - generic [ref=e66]:
+        - textbox "Знайдіть свої товари тут" [ref=e67]: FPV drone
+        - button "Search" [ref=e68] [cursor=pointer]:
+          - generic [ref=e69]: 
+      - button "cart-icon 0 0 грн." [ref=e71] [cursor=pointer]:
+        - img "cart-icon" [ref=e72]
+        - generic [ref=e73]: "0"
+        - generic [ref=e74]: 0 грн.
+  - generic [ref=e75]:
+    - navigation "breadcrumb" [ref=e76]:
+      - list [ref=e77]:
+        - listitem [ref=e78]:
+          - link "" [ref=e79] [cursor=pointer]:
+            - /url: https://rc-store.com.ua/
+            - generic [ref=e80]: 
+        - listitem [ref=e81]: / Пошук
+    - heading "Пошук - FPV drone" [level=1] [ref=e84]
+    - generic: 
+    - generic [ref=e86]:
+      - generic [ref=e87]:
+        - generic [ref=e88]:
+          - generic [ref=e89]: Критерії пошуку
+          - generic [ref=e90]:
+            - textbox "Критерії пошуку" [ref=e91]:
+              - /placeholder: Ключові слова
+              - text: FPV drone
+            - combobox [ref=e92]:
+              - option "Всі категорії" [selected]
+              - option "Квадрокоптери"
+              - option "FPV Дрон для навчання"
+              - option "FPV Дрони BetaFPV"
+              - option "DJI Mavic 3"
+              - option "DJI Mini 2"
+              - option "FPV Дрони Diatone"
+              - option "FPV Дрони FLYWOO"
+              - option "FPV Дрони GepRC"
+              - option "FPV дрони IFLIGHT"
+              - option "FPV Квадрокоптери"
+              - option "DJI Mavic Air 2"
+              - option "FPV Квадрокоптери DJI"
+              - option "Autel Robotics EVO 2"
+              - option "DJI Air 2S"
+              - option "DJI Mavic Mini"
+              - option "DJI Mavic 2"
+              - option "Ryze Tello"
+              - option "DJI Inspire 2"
+              - option "ADS"
+              - option "EcoFlow"
+              - option "Зарядні станції"
+              - option "Сонячні панелі"
+              - option "FPV Дрон"
+              - option "new"
+              - option "Відеообладнання"
+              - option "Відеопередавачі"
+              - option "Відеокамери"
+              - option "Аксесуари INSTA360"
+              - option "Аксесуари для DJI Pocket 2 / Osmo Pocket"
+              - option "Аксесуари для GoPro"
+              - option "Аксесуари для Osmo Action"
+              - option "Універсальні аксесуари для камери"
+              - option "Стабілізатори для фотоапаратів"
+              - option "FPV окуляри для квадрокоптерів"
+              - option "FPV окуляри DJI"
+              - option "FPV окуляри Skyzone"
+              - option "FPV окуляри Walksnail"
+              - option "Системи FPV"
+              - option "Квадрокоптери з камерою"
+              - option "Розпродаж - Обмежена кількість"
+              - option "Судномоделі та човни"
+              - option "Кораблики для риболовлі"
+              - option "Автопілот"
+              - option "Бренди"
+              - option "BetaFPV"
+              - option "GepRC"
+              - option "PGYTECH"
+              - option "MAVIC AIR 2"
+              - option "DJI FPV"
+              - option "MAVIC MINI"
+              - option "OSMO ACTION"
+              - option "MAVIC 2"
+              - option "MAVIC AIR"
+              - option "Pocket 2 / OSMO POCKET"
+              - option "MAVIC PRO"
+              - option "RONIN S"
+              - option "OSMO Mobile 2"
+              - option "PHANTOM"
+              - option "SPARK"
+              - option "GOPRO"
+              - option "INSPIRE"
+              - option "RYZE TELLO"
+              - option "Універсальні"
+              - option "CADDXFPV"
+              - option "FLYWOO"
+              - option "RadioMaster"
+              - option "SKYZONE"
+              - option "DJI"
+              - option "DJI Mavic 3"
+              - option "MAVIC AIR 2"
+              - option "Action 2"
+              - option "DJI Air 2S"
+              - option "DJI FPV"
+              - option "MAVIC 2"
+              - option "MAVIC MINI"
+              - option "Mini 2"
+              - option "Osmo Action"
+              - option "Osmo Mobile"
+              - option "Osmo Pocket"
+              - option "Pocket 2"
+              - option "RS 2"
+              - option "RSC 2"
+              - option "PHANTOM"
+              - option "ROBOMASTER"
+              - option "INSPIRE"
+              - option "RONIN"
+              - option "GOGGLES"
+              - option "MAVIC"
+              - option "TELLO"
+              - option "SPARK"
+              - option "PolarPro"
+              - option "DJI Mavic Air 2 Аксесуари PolarPro"
+              - option "MAVIC 2"
+              - option "MAVIC AIR"
+              - option "OSMO POCKET"
+              - option "MAVIC PRO"
+              - option "PHANTOM"
+              - option "SPARK"
+              - option "OSMO"
+              - option "GoPro"
+              - option "INSPIRE"
+              - option "ZENMUSE"
+              - option "INSTA360"
+              - option "IFLIGHT"
+              - option "FLYSKY"
+              - option "FREEWELL"
+              - option "AUTEL EVO II"
+              - option "DJI FPV"
+              - option "DJI MINI 2 - DJI MAVIC MINI"
+              - option "DJI Mavic 2 Pro"
+              - option "DJI Mavic Air 2"
+              - option "Pocket 2 / Osmo Pocket"
+              - option "Для фотоапаратів"
+              - option "Літаки"
+              - option "Автомобілі"
+              - option "Апаратура Управління"
+              - option "Запчастини та комплектуючі"
+              - option "FPV-Аксесуари для Тренувань"
+              - option "Акумулятори"
+              - option "Антени"
+              - option "Зарядні пристрої"
+              - option "Модулі та приймачі FPV"
+              - option "Пропелери"
+              - option "Рами для квадрокоптерів"
+              - option "РЕБ"
+              - option "Роз'єми та дроти"
+              - option "Стеки і FC"
+              - option "Мотори"
+              - option "Регулятори Швидкості ESC"
+              - option "Сервоприводи"
+        - generic [ref=e93]:
+          - generic [ref=e95] [cursor=pointer]:
+            - checkbox " Пошук в підкатегоріях" [disabled] [ref=e96]
+            - generic [ref=e97]: 
+            - text: Пошук в підкатегоріях
+          - generic [ref=e99] [cursor=pointer]:
+            - checkbox " Пошук в описі товару" [ref=e100]
+            - generic [ref=e101]: 
+            - text: Пошук в описі товару
+        - button "Пошук" [ref=e102] [cursor=pointer]
+        - generic [ref=e103]: Продукти, які відповідають критеріям пошуку
+      - generic [ref=e104]:
+        - generic [ref=e105]:
+          - combobox [ref=e106] [cursor=pointer]:
+            - option "За замовчуванням" [selected]
+            - 'option "Ім`я (A - Я)"'
+            - 'option "Ім`я (Я - A)"'
+            - option "Ціна (Низька)"
+            - option "Ціна (Висока)"
+            - option "Рейтинг (Високий)"
+            - option "Рейтинг (Низький)"
+            - option "Модель (A - Я)"
+            - option "Модель (Я - A)"
+          - combobox [ref=e107] [cursor=pointer]:
+            - option "24" [selected]
+            - option "25"
+            - option "50"
+            - option "75"
+            - option "100"
+        - generic [ref=e108]:
+          - button "" [ref=e109] [cursor=pointer]:
+            - generic [ref=e110]: 
+          - button "" [ref=e111] [cursor=pointer]:
+            - generic [ref=e112]: 
+      - generic [ref=e113]:
+        - generic [ref=e115]:
+          - generic [ref=e116]:
+            - list:  
+            - link "Квадрокоптер FLYWOO FlyLens 75 HD O3 \\O3 Lite 2S Brushless Whoop FPV Drone V1.3" [ref=e117] [cursor=pointer]:
+              - /url: https://rc-store.com.ua/index.php?route=product/product&product_id=11264&search=FPV+drone
+              - img "Квадрокоптер FLYWOO FlyLens 75 HD O3 \\O3 Lite 2S Brushless Whoop FPV Drone V1.3" [ref=e118]
+            - generic [ref=e126]:
+              - generic [ref=e127]: 
+              - generic [ref=e128]: "0"
+          - generic [ref=e129]:
+            - generic [ref=e130]: "Код товару: FW19002878"
+            - link "Квадрокоптер FLYWOO FlyLens 75 HD O3 \\O3 Lite 2S Brushless Whoop FPV Drone V1.3" [ref=e132] [cursor=pointer]:
+              - /url: https://rc-store.com.ua/index.php?route=product/product&product_id=11264&search=FPV+drone
+            - generic [ref=e134]: 20 160 грн.
+            - button "До кошикаДо кошика" [ref=e136] [cursor=pointer]:
+              - img "До кошика" [ref=e137]
+              - text: До кошика
+        - generic [ref=e140]:
+          - generic [ref=e141]:
+            - list:  
+            - link "Квадрокоптер GEPRC MOZ7 V2 O4 Pro Long Range FPV Drone" [ref=e142] [cursor=pointer]:
+              - /url: https://rc-store.com.ua/index.php?route=product/product&product_id=11491&search=FPV+drone
+              - img "Квадрокоптер GEPRC MOZ7 V2 O4 Pro Long Range FPV Drone" [ref=e143]
+            - generic [ref=e151]:
+              - generic [ref=e152]: 
+              - generic [ref=e153]: "0"
+          - generic [ref=e154]:
+            - generic [ref=e155]: "Код товару: GP107620"
+            - link "Квадрокоптер GEPRC MOZ7 V2 O4 Pro Long Range FPV Drone" [ref=e157] [cursor=pointer]:
+              - /url: https://rc-store.com.ua/index.php?route=product/product&product_id=11491&search=FPV+drone
+            - generic [ref=e159]: 33 520 грн.
+            - button "До кошикаДо кошика" [ref=e161] [cursor=pointer]:
+              - img "До кошика" [ref=e162]
+              - text: До кошика
+        - generic [ref=e165]:
+          - generic [ref=e166]:
+            - list:  
+            - link "Акумулятор FLYWOO Explorer Lionpack 18650 3000mAh SONY VTC6 4S 14.8V 4S1P XT30 for Long Range FPV Racing Drone" [ref=e167] [cursor=pointer]:
+              - /url: https://rc-store.com.ua/akumulyator-flywoo-explorer-lionpack-18650-3000mah-sony-vtc6-4s-148v-4s1p-xt30-for-long-range-fpv-racing-drone?search=FPV%20drone
+              - img "Акумулятор FLYWOO Explorer Lionpack 18650 3000mAh SONY VTC6 4S 14.8V 4S1P XT30 for Long Range FPV Racing Drone" [ref=e168]
+            - generic [ref=e176]:
+              - generic [ref=e177]: 
+              - generic [ref=e178]: "0"
+          - generic [ref=e179]:
+            - generic [ref=e180]: "Код товару: EX18650"
+            - link "Акумулятор FLYWOO Explorer Lionpack 18650 3000mAh SONY VTC6 4S 14.8V 4S1P XT30 for Long Range FPV Racing Drone" [ref=e182] [cursor=pointer]:
+              - /url: https://rc-store.com.ua/akumulyator-flywoo-explorer-lionpack-18650-3000mah-sony-vtc6-4s-148v-4s1p-xt30-for-long-range-fpv-racing-drone?search=FPV%20drone
+            - generic [ref=e184]: 2 300 грн.
+            - button "До кошикаДо кошика" [ref=e186] [cursor=pointer]:
+              - img "До кошика" [ref=e187]
+              - text: До кошика
+        - generic [ref=e190]:
+          - generic [ref=e191]:
+            - list:  
+            - link "Квадрокоптер Flywoo Flybee 16 HD O4 2S Ultralight FPV Drone" [ref=e192] [cursor=pointer]:
+              - /url: https://rc-store.com.ua/index.php?route=product/product&product_id=11482&search=FPV+drone
+              - img "Квадрокоптер Flywoo Flybee 16 HD O4 2S Ultralight FPV Drone" [ref=e193]
+            - generic [ref=e201]:
+              - generic [ref=e202]: 
+              - generic [ref=e203]: "0"
+          - generic [ref=e204]:
+            - generic [ref=e205]: "Код товару: FW19004085"
+            - link "Квадрокоптер Flywoo Flybee 16 HD O4 2S Ultralight FPV Drone" [ref=e207] [cursor=pointer]:
+              - /url: https://rc-store.com.ua/index.php?route=product/product&product_id=11482&search=FPV+drone
+            - generic [ref=e209]: 6 050 грн.
+            - button "До кошикаДо кошика" [ref=e211] [cursor=pointer]:
+              - img "До кошика" [ref=e212]
+              - text: До кошика
+        - generic [ref=e215]:
+          - generic [ref=e216]:
+            - list:  
+            - link "Квадрокоптер Flywoo Flybee 16 HD Walksnail 2S Ultralight FPV Drone" [ref=e217] [cursor=pointer]:
+              - /url: https://rc-store.com.ua/index.php?route=product/product&product_id=11484&search=FPV+drone
+              - img "Квадрокоптер Flywoo Flybee 16 HD Walksnail 2S Ultralight FPV Drone" [ref=e218]
+            - generic [ref=e226]:
+              - generic [ref=e227]: 
+              - generic [ref=e228]: "0"
+          - generic [ref=e229]:
+            - generic [ref=e230]: "Код товару: FW19003992"
+            - link "Квадрокоптер Flywoo Flybee 16 HD Walksnail 2S Ultralight FPV Drone" [ref=e232] [cursor=pointer]:
+              - /url: https://rc-store.com.ua/index.php?route=product/product&product_id=11484&search=FPV+drone
+            - generic [ref=e234]: 13 100 грн.
+            - button "До кошикаДо кошика" [ref=e236] [cursor=pointer]:
+              - img "До кошика" [ref=e237]
+              - text: До кошика
+        - generic [ref=e240]:
+          - generic [ref=e241]:
+            - list:  
+            - link "Квадрокоптер Flywoo Flybee 16 HDZero 2S Ultralight FPV Drone" [ref=e242] [cursor=pointer]:
+              - /url: https://rc-store.com.ua/index.php?route=product/product&product_id=11483&search=FPV+drone
+              - img "Квадрокоптер Flywoo Flybee 16 HDZero 2S Ultralight FPV Drone" [ref=e243]
+            - generic [ref=e251]:
+              - generic [ref=e252]: 
+              - generic [ref=e253]: "0"
+          - generic [ref=e254]:
+            - generic [ref=e255]: "Код товару: FW19003995"
+            - link "Квадрокоптер Flywoo Flybee 16 HDZero 2S Ultralight FPV Drone" [ref=e257] [cursor=pointer]:
+              - /url: https://rc-store.com.ua/index.php?route=product/product&product_id=11483&search=FPV+drone
+            - generic [ref=e259]: 13 100 грн.
+            - button "До кошикаДо кошика" [ref=e261] [cursor=pointer]:
+              - img "До кошика" [ref=e262]
+              - text: До кошика
+        - generic [ref=e265]:
+          - generic [ref=e266]:
+            - list:  
+            - link "Квадрокоптер Flywoo Flybee 20 HD O4 2S Ultralight FPV Drone" [ref=e267] [cursor=pointer]:
+              - /url: https://rc-store.com.ua/index.php?route=product/product&product_id=11481&search=FPV+drone
+              - img "Квадрокоптер Flywoo Flybee 20 HD O4 2S Ultralight FPV Drone" [ref=e268]
+            - generic [ref=e276]:
+              - generic [ref=e277]: 
+              - generic [ref=e278]: "0"
+          - generic [ref=e279]:
+            - generic [ref=e280]: "Код товару: FW19003987"
+            - link "Квадрокоптер Flywoo Flybee 20 HD O4 2S Ultralight FPV Drone" [ref=e282] [cursor=pointer]:
+              - /url: https://rc-store.com.ua/index.php?route=product/product&product_id=11481&search=FPV+drone
+            - generic [ref=e284]: 6 050 грн.
+            - button "До кошикаДо кошика" [ref=e286] [cursor=pointer]:
+              - img "До кошика" [ref=e287]
+              - text: До кошика
+        - generic [ref=e290]:
+          - generic [ref=e291]:
+            - list:  
+            - link "Квадрокоптер Flywoo Flybee 20 HD Walksnail 2S Ultralight FPV Drone" [ref=e292] [cursor=pointer]:
+              - /url: https://rc-store.com.ua/index.php?route=product/product&product_id=11485&search=FPV+drone
+              - img "Квадрокоптер Flywoo Flybee 20 HD Walksnail 2S Ultralight FPV Drone" [ref=e293]
+            - generic [ref=e301]:
+              - generic [ref=e302]: 
+              - generic [ref=e303]: "0"
+          - generic [ref=e304]:
+            - generic [ref=e305]: "Код товару: FW19003998"
+            - link "Квадрокоптер Flywoo Flybee 20 HD Walksnail 2S Ultralight FPV Drone" [ref=e307] [cursor=pointer]:
+              - /url: https://rc-store.com.ua/index.php?route=product/product&product_id=11485&search=FPV+drone
+            - generic [ref=e309]: 13 100 грн.
+            - button "До кошикаДо кошика" [ref=e311] [cursor=pointer]:
+              - img "До кошика" [ref=e312]
+              - text: До кошика
+        - generic [ref=e315]:
+          - generic [ref=e316]:
+            - list:  
+            - link "Квадрокоптер Flywoo Flybee 20 HDZero 2S Ultralight FPV Drone" [ref=e317] [cursor=pointer]:
+              - /url: https://rc-store.com.ua/index.php?route=product/product&product_id=11486&search=FPV+drone
+              - img "Квадрокоптер Flywoo Flybee 20 HDZero 2S Ultralight FPV Drone" [ref=e318]
+            - generic [ref=e326]:
+              - generic [ref=e327]: 
+              - generic [ref=e328]: "0"
+          - generic [ref=e329]:
+            - generic [ref=e330]: "Код товару: FW19004002"
+            - link "Квадрокоптер Flywoo Flybee 20 HDZero 2S Ultralight FPV Drone" [ref=e332] [cursor=pointer]:
+              - /url: https://rc-store.com.ua/index.php?route=product/product&product_id=11486&search=FPV+drone
+            - generic [ref=e334]: 13 100 грн.
+            - button "До кошикаДо кошика" [ref=e336] [cursor=pointer]:
+              - img "До кошика" [ref=e337]
+              - text: До кошика
+        - generic [ref=e340]:
+          - generic [ref=e341]:
+            - list:  
+            - link "Квадрокоптер FLYWOO FlyLens 75 HD HDZero 2S Brushless Whoop FPV Drone V1.3" [ref=e342] [cursor=pointer]:
+              - /url: https://rc-store.com.ua/index.php?route=product/product&product_id=11262&search=FPV+drone
+              - img "Квадрокоптер FLYWOO FlyLens 75 HD HDZero 2S Brushless Whoop FPV Drone V1.3" [ref=e343]
+            - generic [ref=e351]:
+              - generic [ref=e352]: 
+              - generic [ref=e353]: "0"
+          - generic [ref=e354]:
+            - generic [ref=e355]: "Код товару: FW19002911"
+            - link "Квадрокоптер FLYWOO FlyLens 75 HD HDZero 2S Brushless Whoop FPV Drone V1.3" [ref=e357] [cursor=pointer]:
+              - /url: https://rc-store.com.ua/index.php?route=product/product&product_id=11262&search=FPV+drone
+            - generic [ref=e359]: 12 600 грн.
+            - button "До кошикаДо кошика" [ref=e361] [cursor=pointer]:
+              - img "До кошика" [ref=e362]
+              - text: До кошика
+        - generic [ref=e365]:
+          - generic [ref=e366]:
+            - list:  
+            - link "Квадрокоптер FLYWOO Flylens 75 HD O4 2S Whoop FPV Drone" [ref=e367] [cursor=pointer]:
+              - /url: https://rc-store.com.ua/index.php?route=product/product&product_id=11259&search=FPV+drone
+              - img "Квадрокоптер FLYWOO Flylens 75 HD O4 2S Whoop FPV Drone" [ref=e368]
+            - generic [ref=e376]:
+              - generic [ref=e377]: 
+              - generic [ref=e378]: "0"
+          - generic [ref=e379]:
+            - generic [ref=e380]: "Код товару: FW19003978"
+            - link "Квадрокоптер FLYWOO Flylens 75 HD O4 2S Whoop FPV Drone" [ref=e382] [cursor=pointer]:
+              - /url: https://rc-store.com.ua/index.php?route=product/product&product_id=11259&search=FPV+drone
+            - generic [ref=e384]: 6 552 грн.
+            - button "До кошикаДо кошика" [ref=e386] [cursor=pointer]:
+              - img "До кошика" [ref=e387]
+              - text: До кошика
+        - generic [ref=e390]:
+          - generic [ref=e391]:
+            - list:  
+            - link "Квадрокоптер FLYWOO Flylens 75 HD O4 PRO 2S Whoop FPV Drone V1.3" [ref=e392] [cursor=pointer]:
+              - /url: https://rc-store.com.ua/index.php?route=product/product&product_id=11257&search=FPV+drone
+              - img "Квадрокоптер FLYWOO Flylens 75 HD O4 PRO 2S Whoop FPV Drone V1.3" [ref=e393]
+            - generic [ref=e401]:
+              - generic [ref=e402]: 
+              - generic [ref=e403]: "0"
+          - generic [ref=e404]:
+            - generic [ref=e405]: "Код товару: FW19004027"
+            - link "Квадрокоптер FLYWOO Flylens 75 HD O4 PRO 2S Whoop FPV Drone V1.3" [ref=e407] [cursor=pointer]:
+              - /url: https://rc-store.com.ua/index.php?route=product/product&product_id=11257&search=FPV+drone
+            - generic [ref=e409]: 6 552 грн.
+            - button "До кошикаДо кошика" [ref=e411] [cursor=pointer]:
+              - img "До кошика" [ref=e412]
+              - text: До кошика
+        - generic [ref=e415]:
+          - generic [ref=e416]:
+            - list:  
+            - link "Квадрокоптер FLYWOO FlyLens 75 HD Walksnail 2S Brushless Whoop FPV Drone V1.3" [ref=e417] [cursor=pointer]:
+              - /url: https://rc-store.com.ua/index.php?route=product/product&product_id=11263&search=FPV+drone
+              - img "Квадрокоптер FLYWOO FlyLens 75 HD Walksnail 2S Brushless Whoop FPV Drone V1.3" [ref=e418]
+            - generic [ref=e426]:
+              - generic [ref=e427]: 
+              - generic [ref=e428]: "0"
+          - generic [ref=e429]:
+            - generic [ref=e430]: "Код товару: FW19002889"
+            - link "Квадрокоптер FLYWOO FlyLens 75 HD Walksnail 2S Brushless Whoop FPV Drone V1.3" [ref=e432] [cursor=pointer]:
+              - /url: https://rc-store.com.ua/index.php?route=product/product&product_id=11263&search=FPV+drone
+            - generic [ref=e434]: 12 700 грн.
+            - button "До кошикаДо кошика" [ref=e436] [cursor=pointer]:
+              - img "До кошика" [ref=e437]
+              - text: До кошика
+        - generic [ref=e440]:
+          - generic [ref=e441]:
+            - list:  
+            - link "Квадрокоптер FLYWOO FlyLens 75 O3 Drone kit 2S Brushless Whoop FPV Drone V1.3" [ref=e442] [cursor=pointer]:
+              - /url: https://rc-store.com.ua/index.php?route=product/product&product_id=11261&search=FPV+drone
+              - img "Квадрокоптер FLYWOO FlyLens 75 O3 Drone kit 2S Brushless Whoop FPV Drone V1.3" [ref=e443]
+            - generic [ref=e451]:
+              - generic [ref=e452]: 
+              - generic [ref=e453]: "0"
+          - generic [ref=e454]:
+            - generic [ref=e455]: "Код товару: FW19002924"
+            - link "Квадрокоптер FLYWOO FlyLens 75 O3 Drone kit 2S Brushless Whoop FPV Drone V1.3" [ref=e457] [cursor=pointer]:
+              - /url: https://rc-store.com.ua/index.php?route=product/product&product_id=11261&search=FPV+drone
+            - generic [ref=e459]: 6 552 грн.
+            - button "До кошикаДо кошика" [ref=e461] [cursor=pointer]:
+              - img "До кошика" [ref=e462]
+              - text: До кошика
+        - generic [ref=e465]:
+          - generic [ref=e466]:
+            - list:  
+            - link "Квадрокоптер FLYWOO FlyLens 85 HD 2S Brushless Whoop Fpv drone V1.3 w/ Walksnail Avatar V2" [ref=e467] [cursor=pointer]:
+              - /url: https://rc-store.com.ua/index.php?route=product/product&product_id=11269&search=FPV+drone
+              - img "Квадрокоптер FLYWOO FlyLens 85 HD 2S Brushless Whoop Fpv drone V1.3 w/ Walksnail Avatar V2" [ref=e468]
+            - generic [ref=e476]:
+              - generic [ref=e477]: 
+              - generic [ref=e478]: "0"
+          - generic [ref=e479]:
+            - generic [ref=e480]: "Код товару: GW19002444"
+            - link "Квадрокоптер FLYWOO FlyLens 85 HD 2S Brushless Whoop Fpv drone V1.3 w/ Walksnail Avatar V2" [ref=e482] [cursor=pointer]:
+              - /url: https://rc-store.com.ua/index.php?route=product/product&product_id=11269&search=FPV+drone
+            - generic [ref=e484]: 15 120 грн.
+            - button "До кошикаДо кошика" [ref=e486] [cursor=pointer]:
+              - img "До кошика" [ref=e487]
+              - text: До кошика
+        - generic [ref=e490]:
+          - generic [ref=e491]:
+            - list:  
+            - link "Квадрокоптер FLYWOO FlyLens 85 HD 2S Brushless Whoop Fpv drone V1.3 w/ Walksnail Moonlight 4K" [ref=e492] [cursor=pointer]:
+              - /url: https://rc-store.com.ua/index.php?route=product/product&product_id=11260&search=FPV+drone
+              - img "Квадрокоптер FLYWOO FlyLens 85 HD 2S Brushless Whoop Fpv drone V1.3 w/ Walksnail Moonlight 4K" [ref=e493]
+            - generic [ref=e501]:
+              - generic [ref=e502]: 
+              - generic [ref=e503]: "0"
+          - generic [ref=e504]:
+            - generic [ref=e505]: "Код товару: FW19003395"
+            - link "Квадрокоптер FLYWOO FlyLens 85 HD 2S Brushless Whoop Fpv drone V1.3 w/ Walksnail Moonlight 4K" [ref=e507] [cursor=pointer]:
+              - /url: https://rc-store.com.ua/index.php?route=product/product&product_id=11260&search=FPV+drone
+            - generic [ref=e509]: 17 900 грн.
+            - button "До кошикаДо кошика" [ref=e511] [cursor=pointer]:
+              - img "До кошика" [ref=e512]
+              - text: До кошика
+        - generic [ref=e515]:
+          - generic [ref=e516]:
+            - list:  
+            - link "Квадрокоптер FLYWOO FlyLens 85 HD HDZero 2S Brushless Whoop Fpv drone V1.3" [ref=e517] [cursor=pointer]:
+              - /url: https://rc-store.com.ua/index.php?route=product/product&product_id=11268&search=FPV+drone
+              - img "Квадрокоптер FLYWOO FlyLens 85 HD HDZero 2S Brushless Whoop Fpv drone V1.3" [ref=e518]
+            - generic [ref=e526]:
+              - generic [ref=e527]: 
+              - generic [ref=e528]: "0"
+          - generic [ref=e529]:
+            - generic [ref=e530]: "Код товару: FW19002455"
+            - link "Квадрокоптер FLYWOO FlyLens 85 HD HDZero 2S Brushless Whoop Fpv drone V1.3" [ref=e532] [cursor=pointer]:
+              - /url: https://rc-store.com.ua/index.php?route=product/product&product_id=11268&search=FPV+drone
+            - generic [ref=e534]: 14 616 грн.
+            - button "До кошикаДо кошика" [ref=e536] [cursor=pointer]:
+              - img "До кошика" [ref=e537]
+              - text: До кошика
+        - generic [ref=e540]:
+          - generic [ref=e541]:
+            - list:  
+            - link "Квадрокоптер FLYWOO FlyLens 85 HD O3 Lite 2S Brushless Whoop FPV Drone V1.3" [ref=e542] [cursor=pointer]:
+              - /url: https://rc-store.com.ua/index.php?route=product/product&product_id=11271&search=FPV+drone
+              - img "Квадрокоптер FLYWOO FlyLens 85 HD O3 Lite 2S Brushless Whoop FPV Drone V1.3" [ref=e543]
+            - generic [ref=e551]:
+              - generic [ref=e552]: 
+              - generic [ref=e553]: "0"
+          - generic [ref=e554]:
+            - generic [ref=e555]: "Код товару: FW19002440"
+            - link "Квадрокоптер FLYWOO FlyLens 85 HD O3 Lite 2S Brushless Whoop FPV Drone V1.3" [ref=e557] [cursor=pointer]:
+              - /url: https://rc-store.com.ua/index.php?route=product/product&product_id=11271&search=FPV+drone
+            - generic [ref=e559]: 22 680 грн.
+            - button "До кошикаДо кошика" [ref=e561] [cursor=pointer]:
+              - img "До кошика" [ref=e562]
+              - text: До кошика
+        - generic [ref=e565]:
+          - generic [ref=e566]:
+            - list:  
+            - link "Квадрокоптер FLYWOO Flylens 85 HD O4 2S Whoop FPV Drone" [ref=e567] [cursor=pointer]:
+              - /url: https://rc-store.com.ua/index.php?route=product/product&product_id=11258&search=FPV+drone
+              - img "Квадрокоптер FLYWOO Flylens 85 HD O4 2S Whoop FPV Drone" [ref=e568]
+            - generic [ref=e576]:
+              - generic [ref=e577]: 
+              - generic [ref=e578]: "0"
+          - generic [ref=e579]:
+            - generic [ref=e580]: "Код товару: FW19003975"
+            - link "Квадрокоптер FLYWOO Flylens 85 HD O4 2S Whoop FPV Drone" [ref=e582] [cursor=pointer]:
+              - /url: https://rc-store.com.ua/index.php?route=product/product&product_id=11258&search=FPV+drone
+            - generic [ref=e584]: 6 552 грн.
+            - button "До кошикаДо кошика" [ref=e586] [cursor=pointer]:
+              - img "До кошика" [ref=e587]
+              - text: До кошика
+        - generic [ref=e590]:
+          - generic [ref=e591]:
+            - list:  
+            - link "Квадрокоптер FLYWOO Flylens 85 HD O4 PRO 2S LED Whoop FPV Drone V1.3" [ref=e592] [cursor=pointer]:
+              - /url: https://rc-store.com.ua/index.php?route=product/product&product_id=11256&search=FPV+drone
+              - img "Квадрокоптер FLYWOO Flylens 85 HD O4 PRO 2S LED Whoop FPV Drone V1.3" [ref=e593]
+            - generic [ref=e601]:
+              - generic [ref=e602]: 
+              - generic [ref=e603]: "0"
+          - generic [ref=e604]:
+            - generic [ref=e605]: "Код товару: FW19004117"
+            - link "Квадрокоптер FLYWOO Flylens 85 HD O4 PRO 2S LED Whoop FPV Drone V1.3" [ref=e607] [cursor=pointer]:
+              - /url: https://rc-store.com.ua/index.php?route=product/product&product_id=11256&search=FPV+drone
+            - generic [ref=e609]: 8 064 грн.
+            - button "До кошикаДо кошика" [ref=e611] [cursor=pointer]:
+              - img "До кошика" [ref=e612]
+              - text: До кошика
+        - generic [ref=e615]:
+          - generic [ref=e616]:
+            - list:  
+            - link "Квадрокоптер FLYWOO FlyLens 85 HD Wasp 2S Brushless Whoop FPV Drone V1.3" [ref=e617] [cursor=pointer]:
+              - /url: https://rc-store.com.ua/index.php?route=product/product&product_id=11270&search=FPV+drone
+              - img "Квадрокоптер FLYWOO FlyLens 85 HD Wasp 2S Brushless Whoop FPV Drone V1.3" [ref=e618]
+            - generic [ref=e626]:
+              - generic [ref=e627]: 
+              - generic [ref=e628]: "0"
+          - generic [ref=e629]:
+            - generic [ref=e630]: "Код товару: FW19002489"
+            - link "Квадрокоптер FLYWOO FlyLens 85 HD Wasp 2S Brushless Whoop FPV Drone V1.3" [ref=e632] [cursor=pointer]:
+              - /url: https://rc-store.com.ua/index.php?route=product/product&product_id=11270&search=FPV+drone
+            - generic [ref=e634]: 17 136 грн.
+            - button "До кошикаДо кошика" [ref=e636] [cursor=pointer]:
+              - img "До кошика" [ref=e637]
+              - text: До кошика
+        - generic [ref=e640]:
+          - generic [ref=e641]:
+            - list:  
+            - link "Квадрокоптер FLYWOO Flytimes 85 HD O4 2S Micro FPV Drone" [ref=e642] [cursor=pointer]:
+              - /url: https://rc-store.com.ua/index.php?route=product/product&product_id=11292&search=FPV+drone
+              - img "Квадрокоптер FLYWOO Flytimes 85 HD O4 2S Micro FPV Drone" [ref=e643]
+            - generic [ref=e651]:
+              - generic [ref=e652]: 
+              - generic [ref=e653]: "0"
+          - generic [ref=e654]:
+            - generic [ref=e655]: "Код товару: FW19003981"
+            - link "Квадрокоптер FLYWOO Flytimes 85 HD O4 2S Micro FPV Drone" [ref=e657] [cursor=pointer]:
+              - /url: https://rc-store.com.ua/index.php?route=product/product&product_id=11292&search=FPV+drone
+            - generic [ref=e659]: 6 550 грн.
+            - button "До кошикаДо кошика" [ref=e661] [cursor=pointer]:
+              - img "До кошика" [ref=e662]
+              - text: До кошика
+        - generic [ref=e665]:
+          - generic [ref=e666]:
+            - list:  
+            - link "Квадрокоптер FLYWOO Flytimes 85 HD O4 PRO 2S Micro FPV Drone" [ref=e667] [cursor=pointer]:
+              - /url: https://rc-store.com.ua/index.php?route=product/product&product_id=11293&search=FPV+drone
+              - img "Квадрокоптер FLYWOO Flytimes 85 HD O4 PRO 2S Micro FPV Drone" [ref=e668]
+            - generic [ref=e676]:
+              - generic [ref=e677]: 
+              - generic [ref=e678]: "0"
+          - generic [ref=e679]:
+            - generic [ref=e680]: "Код товару: FW190040230"
+            - link "Квадрокоптер FLYWOO Flytimes 85 HD O4 PRO 2S Micro FPV Drone" [ref=e682] [cursor=pointer]:
+              - /url: https://rc-store.com.ua/index.php?route=product/product&product_id=11293&search=FPV+drone
+            - generic [ref=e684]: 6 550 грн.
+            - button "До кошикаДо кошика" [ref=e686] [cursor=pointer]:
+              - img "До кошика" [ref=e687]
+              - text: До кошика
+        - generic [ref=e690]:
+          - generic [ref=e691]:
+            - list:  
+            - link "Квадрокоптер GEPRC Cinebot30 Analog FPV Drone 6S" [ref=e692] [cursor=pointer]:
+              - /url: https://rc-store.com.ua/geprc-cinebot30?search=FPV%20drone
+              - img "Квадрокоптер GEPRC Cinebot30 Analog FPV Drone 6S" [ref=e693]
+            - generic [ref=e701]:
+              - generic [ref=e702]: 
+              - generic [ref=e703]: "0"
+          - generic [ref=e704]:
+            - generic [ref=e705]: "Код товару: GP105713"
+            - link "Квадрокоптер GEPRC Cinebot30 Analog FPV Drone 6S" [ref=e707] [cursor=pointer]:
+              - /url: https://rc-store.com.ua/geprc-cinebot30?search=FPV%20drone
+            - generic [ref=e709]: 14 500 грн.
+            - button "До кошикаДо кошика" [ref=e711] [cursor=pointer]:
+              - img "До кошика" [ref=e712]
+              - text: До кошика
+      - list [ref=e715]:
+        - listitem [ref=e716]:
+          - generic [ref=e717]: "1"
+        - listitem [ref=e718]:
+          - link "2" [ref=e719] [cursor=pointer]:
+            - /url: https://rc-store.com.ua/index.php?route=product/search&search=FPV+drone&page=2
+        - listitem [ref=e720]:
+          - link "3" [ref=e721] [cursor=pointer]:
+            - /url: https://rc-store.com.ua/index.php?route=product/search&search=FPV+drone&page=3
+        - listitem [ref=e722]:
+          - link ">" [ref=e723] [cursor=pointer]:
+            - /url: https://rc-store.com.ua/index.php?route=product/search&search=FPV+drone&page=2
+        - listitem [ref=e724]:
+          - link ">|" [ref=e725] [cursor=pointer]:
+            - /url: https://rc-store.com.ua/index.php?route=product/search&search=FPV+drone&page=3
+  - contentinfo [ref=e726]:
+    - generic [ref=e728]:
+      - generic [ref=e729]:
+        - generic [ref=e731]:
+          - generic [ref=e733] [cursor=pointer]:
+            - text: +380 (99) 060 05 37
+            - generic [ref=e734]: 
+          - button "Зв'язатися з нами" [ref=e735] [cursor=pointer]
+          - generic [ref=e736]: Київ, Васильківська 4а.
+          - link "mail@rc-store.com.ua" [ref=e737] [cursor=pointer]:
+            - /url: mailto:mail@rc-store.com.ua
+          - list [ref=e738]:
+            - listitem [ref=e739]
+            - listitem [ref=e740]
+        - generic [ref=e741]:
+          - generic [ref=e742]: Категорії
+          - list [ref=e743]:
+            - listitem [ref=e744]:
+              - link "Квадрокоптери" [ref=e745] [cursor=pointer]:
+                - /url: https://rc-store.com.ua/kvadrokoptery
+            - listitem [ref=e746]:
+              - link "Відеообладнання" [ref=e747] [cursor=pointer]:
+                - /url: https://rc-store.com.ua/videoobladnania
+            - listitem [ref=e748]:
+              - link "Судномоделі та човни" [ref=e749] [cursor=pointer]:
+                - /url: https://rc-store.com.ua/sudomodeli-litaky
+            - listitem [ref=e750]:
+              - link "Літаки" [ref=e751] [cursor=pointer]:
+                - /url: https://rc-store.com.ua/Litaky
+            - listitem [ref=e752]:
+              - link "Автомобілі" [ref=e753] [cursor=pointer]:
+                - /url: https://rc-store.com.ua/avtomobili
+            - listitem [ref=e754]:
+              - link "Запчастини та комплектуючі" [ref=e755] [cursor=pointer]:
+                - /url: https://rc-store.com.ua/zapchastyny-ta-komplektuuchi
+            - listitem [ref=e756]:
+              - link "Бренди" [ref=e757] [cursor=pointer]:
+                - /url: https://rc-store.com.ua/brendy
+        - generic [ref=e758]:
+          - generic [ref=e759]: Інформація
+          - list [ref=e760]:
+            - listitem [ref=e761]:
+              - link "Оплата і доставка" [ref=e762] [cursor=pointer]:
+                - /url: /oplata-i-dostavka-5
+            - listitem [ref=e763]:
+              - link "Про компанію" [ref=e764] [cursor=pointer]:
+                - /url: /pro-kompaniiu
+            - listitem [ref=e765]:
+              - link "Сервісний центр" [ref=e766] [cursor=pointer]:
+                - /url: /servisnyy-centr-3
+            - listitem [ref=e767]:
+              - link "Аэросъемка" [ref=e768] [cursor=pointer]:
+                - /url: /
+            - listitem [ref=e769]:
+              - link "Офіційний дилер" [ref=e770] [cursor=pointer]:
+                - /url: /oficialynyy-diler-10
+            - listitem [ref=e771]:
+              - link "Контакти" [ref=e772] [cursor=pointer]:
+                - /url: https://rc-store.com.ua/index.php?route=information/contact
+            - listitem [ref=e773]:
+              - link "Повернення" [ref=e774] [cursor=pointer]:
+                - /url: https://rc-store.com.ua/index.php?route=account/return/add
+            - listitem [ref=e775]:
+              - link "Мапа сайту" [ref=e776] [cursor=pointer]:
+                - /url: https://rc-store.com.ua/index.php?route=information/sitemap
+            - listitem [ref=e777]:
+              - link "Бренди" [ref=e778] [cursor=pointer]:
+                - /url: https://rc-store.com.ua/index.php?route=product/manufacturer
+            - listitem [ref=e779]:
+              - link "Подарункові сертифікати" [ref=e780] [cursor=pointer]:
+                - /url: https://rc-store.com.ua/index.php?route=account/voucher
+            - listitem [ref=e781]:
+              - link "Спеціальні пропозиції" [ref=e782] [cursor=pointer]:
+                - /url: https://rc-store.com.ua/index.php?route=product/special
+        - generic [ref=e783]:
+          - generic [ref=e784]:
+            - generic [ref=e785]: Графік роботи
+            - list [ref=e786]:
+              - listitem [ref=e787]: Пн-Пт - 10:00 - 19:00
+              - listitem [ref=e788]: Сб - 11:00 - 16:00
+              - listitem [ref=e789]: Нд - 11:00 - 15:00
+              - listitem [ref=e790]: Відвідування за попередньою домовленістю.
+          - generic [ref=e791]:
+            - generic [ref=e792]: "Ми в соціальних мережах:"
+            - list [ref=e793]:
+              - listitem [ref=e794]:
+                - link " https://www.facebook.com/rcstore.com.ua" [ref=e795] [cursor=pointer]:
+                  - /url: https://www.facebook.com/rcstore.com.ua
+                  - generic [ref=e796]: 
+                  - text: https://www.facebook.com/rcstore.com.ua
+              - listitem [ref=e797]:
+                - link " https://www.youtube.com/channel/UCPrD4Qv-0QE8hfKMycausSA" [ref=e798] [cursor=pointer]:
+                  - /url: https://www.youtube.com/channel/UCPrD4Qv-0QE8hfKMycausSA
+                  - generic [ref=e799]: 
+                  - text: https://www.youtube.com/channel/UCPrD4Qv-0QE8hfKMycausSA
+              - listitem [ref=e800]:
+                - link " https://www.instagram.com/rcstore.com.ua/" [ref=e801] [cursor=pointer]:
+                  - /url: https://www.instagram.com/rcstore.com.ua/
+                  - generic [ref=e802]: 
+                  - text: https://www.instagram.com/rcstore.com.ua/
+              - listitem [ref=e803]:
+                - link " https://t.me/rcstore_mail" [ref=e804] [cursor=pointer]:
+                  - /url: https://t.me/rcstore_mail
+                  - generic [ref=e805]: 
+                  - text: https://t.me/rcstore_mail
+      - generic [ref=e809]:
+        - text: Слава Україні!
+        - text: RC Store™ 2016-2025
+    - generic [ref=e812] [cursor=pointer]:
+      - generic [ref=e813]: 
+      - text: 
+  - text: 
+```
