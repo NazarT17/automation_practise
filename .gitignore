@@ -17,4 +17,11 @@ node_modules/
 
 #Environmental  variables
 .env
+
+
+// private files
 ONBOARDING_GUIDE.md
+DEMO_PRESENTATION.md
+demo.sh
+QUICK_REFERENCE.md
+HOW_TO_PRESENT.md
