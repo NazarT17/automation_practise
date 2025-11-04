@@ -102,4 +102,28 @@ test.describe("Petstore API Tests @api", () => {
       logger.info("[TEST] ✓ Update completed successfully");
     });
   });
+
+  test("DEMO - Intentional Failure (DELETE AFTER DEMO)", async () => {
+    await test.step("This test will fail to demonstrate screenshot/trace capture", async () => {
+      logger.info("[TEST] 🎬 DEMO: Demonstrating failure handling");
+      logger.info(
+        "[TEST] This test intentionally fails to show artifacts capture"
+      );
+
+      // Create a pet first (to have some API activity)
+      const newPet = PetFactory.createAvailablePet();
+      logger.info(`[TEST] Created test data: ${newPet.name}`);
+
+      const result = await apiClient.createPet(newPet);
+      expect(result.response.status()).toBe(200);
+
+      logger.info("[TEST] Pet created successfully");
+      logger.info("[TEST] Now triggering intentional failure...");
+
+      // This will intentionally fail to demonstrate failure artifacts
+      expect(result.pet.status).toBe("sold"); // ❌ Will fail because status is "available"
+
+      logger.info("[TEST] This line won't be reached");
+    });
+  });
 });
