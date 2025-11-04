@@ -1,4 +1,4 @@
-import { APIRequestContext, APIResponse } from "@playwright/test";
+import { APIRequestContext, APIResponse, test } from "@playwright/test";
 import logger from "../utils/logger";
 import { Pet } from "../factories/petFactory";
 
@@ -10,19 +10,67 @@ export class PetstoreApiClient {
   constructor(private request: APIRequestContext) {}
 
   /**
+   * Attach API request/response details to Allure report
+   */
+  private async attachApiTrace(
+    method: string,
+    url: string,
+    requestData: any,
+    response: APIResponse
+  ) {
+    let responseBody = "";
+    try {
+      responseBody = await response.text();
+    } catch (e) {
+      responseBody = "Unable to read response body";
+    }
+
+    // Attach request details
+    await test.info().attach(`${method} Request: ${url}`, {
+      body: JSON.stringify(
+        {
+          method,
+          url,
+          body: requestData,
+        },
+        null,
+        2
+      ),
+      contentType: "application/json",
+    });
+
+    // Attach response details
+    await test.info().attach(`${method} Response: ${response.status()}`, {
+      body: JSON.stringify(
+        {
+          status: response.status(),
+          statusText: response.statusText(),
+          headers: response.headers(),
+          body: responseBody ? JSON.parse(responseBody) : null,
+        },
+        null,
+        2
+      ),
+      contentType: "application/json",
+    });
+  }
+
+  /**
    * Get pets by status
    * @param status - Pet status filter (available, pending, sold)
    */
   async getPetsByStatus(
     status: "available" | "pending" | "sold"
   ): Promise<{ response: APIResponse; pets: Pet[] }> {
+    const url = `pet/findByStatus?status=${status}`;
     logger.info(`[API] Getting pets with status: ${status}`);
 
-    const response = await this.request.get(
-      `pet/findByStatus?status=${status}`
-    );
+    const response = await this.request.get(url);
 
     logger.info(`[API] Response status: ${response.status()}`);
+
+    // Attach API trace to Allure
+    await this.attachApiTrace("GET", url, null, response);
 
     if (!response.ok()) {
       const errorText = await response.text();
@@ -50,6 +98,9 @@ export class PetstoreApiClient {
     });
 
     logger.info(`[API] Response status: ${response.status()}`);
+
+    // Attach API trace to Allure
+    await this.attachApiTrace("POST", "pet", pet, response);
 
     if (!response.ok()) {
       const errorText = await response.text();
@@ -81,6 +132,9 @@ export class PetstoreApiClient {
     });
 
     logger.info(`[API] Response status: ${response.status()}`);
+
+    // Attach API trace to Allure
+    await this.attachApiTrace("PUT", "pet", pet, response);
 
     if (!response.ok()) {
       const errorText = await response.text();
