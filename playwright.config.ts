@@ -54,25 +54,25 @@ export default defineConfig({
     {
       name: "chromium",
       use: { ...devices["Desktop Chrome"] },
-      testIgnore: "**/api/**", // Ignore API tests for browser projects // to remove
+      grep: /@ui/,
     },
 
     {
       name: "firefox",
       use: { ...devices["Desktop Firefox"] },
-      testIgnore: "**/api/**", // Ignore API tests for browser projects // to remove
+      grep: /@ui/,
     },
 
     {
       name: "webkit",
       use: { ...devices["Desktop Safari"] },
-      testIgnore: "**/api/**", // Ignore API tests for browser projects // to remove
+      grep: /@ui/,
     },
 
-    // API testing project - only runs API tests
+    // API testing project - only runs tests tagged with @api
     {
       name: "api",
-      testMatch: "**/api/**/*.spec.ts",
+      grep: /@api/,
       use: {
         baseURL: "https://petstore.swagger.io/v2/",
         extraHTTPHeaders: {

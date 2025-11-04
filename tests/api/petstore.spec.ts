@@ -3,7 +3,7 @@ import { PetstoreApiClient } from "../../api/petstoreApiClient";
 import { PetFactory } from "../../factories/petFactory";
 import logger from "../../utils/logger";
 
-test.describe("Petstore API Tests", () => {
+test.describe("Petstore API Tests @api", () => {
   let apiClient: PetstoreApiClient;
 
   test.beforeEach(async ({ request }) => {

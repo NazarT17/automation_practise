@@ -3,7 +3,7 @@ import { HomePage } from "../pages/HomePage";
 import { SearchResultsPage } from "../pages/SearchResultsPage";
 import { ProductPage } from "../pages/ProductPage";
 
-test("Search FPV drone and add first product to cart", async ({ page }) => {
+test("Search FPV drone and add first product to cart @ui", async ({ page }) => {
   const home = new HomePage(page);
   const results = new SearchResultsPage(page);
   const product = new ProductPage(page);
