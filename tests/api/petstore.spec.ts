@@ -1,62 +1,105 @@
 import { test, expect } from "@playwright/test";
+import { PetstoreApiClient } from "../../api/petstoreApiClient";
+import { PetFactory } from "../../factories/petFactory";
+import logger from "../../utils/logger";
 
 test.describe("Petstore API Tests", () => {
-  test("GET - Find pets by status", async ({ request }) => {
-    const response = await request.get("pet/findByStatus?status=available");
+  let apiClient: PetstoreApiClient;
 
-    expect(response.status()).toBe(200);
-    const pets = await response.json();
-
-    expect(Array.isArray(pets)).toBeTruthy();
-    expect(pets.length).toBeGreaterThan(0);
+  test.beforeEach(async ({ request }) => {
+    apiClient = new PetstoreApiClient(request);
+    logger.info("=".repeat(80));
+    logger.info("Starting new API test");
   });
 
-  test("POST - Create a new pet", async ({ request }) => {
-    const newPet = {
-      id: Math.floor(Math.random() * 100000),
-      name: "Fluffy",
-      photoUrls: ["https://example.com/photo.jpg"],
-      status: "available",
-    };
-
-    const response = await request.post("pet", {
-      data: newPet,
-    });
-
-    expect(response.status()).toBe(200);
-    const pet = await response.json();
-
-    expect(pet.id).toBe(newPet.id);
-    expect(pet.name).toBe("Fluffy");
-    expect(pet.status).toBe("available");
+  test.afterEach(async () => {
+    logger.info("Test completed");
+    logger.info("=".repeat(80));
   });
 
-  test("PUT - Update an existing pet", async ({ request }) => {
-    // First create a pet
-    const newPet = {
-      id: Math.floor(Math.random() * 100000),
-      name: "Original Name",
-      photoUrls: ["https://example.com/photo.jpg"],
-      status: "available",
-    };
+  test("GET - Find pets by status", async () => {
+    await test.step("Fetch available pets from API", async () => {
+      logger.info("[TEST] Step 1: Getting available pets");
 
-    await request.post("pet", { data: newPet });
+      const { response, pets } = await apiClient.getPetsByStatus("available");
 
-    // Now update it
-    const updatedPet = {
-      ...newPet,
-      name: "Updated Name",
-      status: "sold",
-    };
+      expect(response.status()).toBe(200);
+      expect(Array.isArray(pets)).toBeTruthy();
+      expect(pets.length).toBeGreaterThan(0);
 
-    const response = await request.put("pet", {
-      data: updatedPet,
+      logger.info(`[TEST] ✓ Verified ${pets.length} available pets found`);
     });
 
-    expect(response.status()).toBe(200);
-    const pet = await response.json();
+    await test.step("Verify response structure", async () => {
+      logger.info("[TEST] Step 2: Verifying response structure");
 
-    expect(pet.name).toBe("Updated Name");
-    expect(pet.status).toBe("sold");
+      const { pets } = await apiClient.getPetsByStatus("available");
+
+      const firstPet = pets[0];
+      expect(firstPet).toHaveProperty("id");
+      expect(firstPet).toHaveProperty("name");
+      expect(firstPet).toHaveProperty("status");
+      expect(firstPet.status).toBe("available");
+
+      logger.info("[TEST] ✓ Response structure is valid");
+    });
+  });
+
+  test("POST - Create a new pet", async () => {
+    await test.step("Generate random pet data using Faker and create pet", async () => {
+      logger.info("[TEST] Step 1: Generating pet data with Faker");
+
+      const newPet = PetFactory.createAvailablePet();
+      logger.info(`[TEST] Generated pet: ${JSON.stringify(newPet, null, 2)}`);
+
+      const result = await apiClient.createPet(newPet);
+
+      expect(result.response.status()).toBe(200);
+      expect(result.pet.id).toBe(newPet.id);
+      expect(result.pet.name).toBe(newPet.name);
+      expect(result.pet.status).toBe("available");
+
+      logger.info("[TEST] ✓ Pet created successfully with all expected fields");
+    });
+  });
+  test("PUT - Update an existing pet", async () => {
+    let petId: number;
+    let originalName: string;
+
+    await test.step("Create a pet with random data", async () => {
+      logger.info("[TEST] Step 1: Creating initial pet");
+
+      const newPet = PetFactory.createAvailablePet();
+      originalName = newPet.name;
+
+      const result = await apiClient.createPet(newPet);
+      petId = result.pet.id;
+
+      logger.info(
+        `[TEST] ✓ Pet created with id: ${petId}, name: "${originalName}"`
+      );
+    });
+
+    await test.step("Update pet status and name", async () => {
+      logger.info("[TEST] Step 2: Updating pet details");
+
+      const updatedPetData = PetFactory.createSoldPet({
+        id: petId,
+        name: "Updated Pet Name",
+      });
+
+      const result = await apiClient.updatePet(updatedPetData);
+
+      expect(result.response.status()).toBe(200);
+      expect(result.pet.id).toBe(petId);
+      expect(result.pet.name).toBe("Updated Pet Name");
+      expect(result.pet.status).toBe("sold");
+
+      logger.info(
+        `[TEST] ✓ Pet updated from "${originalName}" to "Updated Pet Name"`
+      );
+      logger.info(`[TEST] ✓ Status changed from "available" to "sold"`);
+      logger.info("[TEST] ✓ Update completed successfully");
+    });
   });
 });

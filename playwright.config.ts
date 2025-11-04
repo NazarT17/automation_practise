@@ -22,14 +22,31 @@ export default defineConfig({
   /* Opt out of parallel tests on CI. */
   workers: process.env.CI ? 1 : undefined,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
-  reporter: "html",
+  reporter: [
+    ["html"],
+    ["list"],
+    [
+      "allure-playwright",
+      {
+        outputFolder: "allure-results",
+        detail: true,
+        suiteTitle: true,
+      },
+    ],
+  ],
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
     /* Base URL to use in actions like `await page.goto('')`. */
     baseURL: "https://rc-store.com.ua/",
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
-    trace: "on-first-retry",
+    trace: "retain-on-failure",
+
+    /* Take screenshot only on failure */
+    screenshot: "only-on-failure",
+
+    /* Record video only on failure */
+    video: "retain-on-failure",
   },
 
   /* Configure projects for major browsers */
@@ -37,19 +54,19 @@ export default defineConfig({
     {
       name: "chromium",
       use: { ...devices["Desktop Chrome"] },
-      testIgnore: "**/api/**", // Ignore API tests for browser projects
+      testIgnore: "**/api/**", // Ignore API tests for browser projects // to remove
     },
 
     {
       name: "firefox",
       use: { ...devices["Desktop Firefox"] },
-      testIgnore: "**/api/**", // Ignore API tests for browser projects
+      testIgnore: "**/api/**", // Ignore API tests for browser projects // to remove
     },
 
     {
       name: "webkit",
       use: { ...devices["Desktop Safari"] },
-      testIgnore: "**/api/**", // Ignore API tests for browser projects
+      testIgnore: "**/api/**", // Ignore API tests for browser projects // to remove
     },
 
     // API testing project - only runs API tests

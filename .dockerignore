@@ -1,0 +1,27 @@
+# Dependencies
+node_modules/
+
+# Test outputs
+allure-results/
+allure-report/
+playwright-report/
+test-results/
+logs/
+
+# Git
+.git/
+.gitignore
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Misc
+*.log
+npm-debug.log*

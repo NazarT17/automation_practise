@@ -1,0 +1,20 @@
+version: "3.8"
+
+services:
+  playwright-tests:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: automation-practise-tests
+    volumes:
+      # Mount volumes to persist test results and reports on host machine
+      - ./allure-results:/app/allure-results
+      - ./allure-report:/app/allure-report
+      - ./playwright-report:/app/playwright-report
+      - ./test-results:/app/test-results
+      - ./logs:/app/logs
+    environment:
+      - CI=true
+      - NODE_ENV=production
+    # Override default command if needed
+    # command: npm run test:api
